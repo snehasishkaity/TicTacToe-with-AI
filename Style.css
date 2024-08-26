@@ -1,0 +1,103 @@
+body {
+    background-color: #f5e050;
+    justify-content: center;
+    color: #f0t;
+}
+
+.container {
+    text-align: center;
+  
+    margin-top: 50px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    grid-gap: 5px;
+    margin-bottom: 20px;
+    border: 0px solid #;
+}
+.scoreboard {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.scoreboard div {
+    margin: 5px 0;
+}
+
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffff9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid #4a4540;
+}
+
+.cell:hover {
+    background-color: #ADD8E6;
+}
+
+#message {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #green;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.win-animation {
+    animation: blink 2s ease infinite;
+}
+
+}
+
+/* Center the game on the screen */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Blinking animation for winning line */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    animation: blink 1s step-start 0s infinite;
+}
